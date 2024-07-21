@@ -46,7 +46,7 @@ The base URL for the API is:
   }
   // More states...
 ] }
-
+``
 ### 2. Get State Details
 
 - **Endpoint:** `/states/{id}`
