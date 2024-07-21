@@ -23,14 +23,14 @@ class StateController {
     if(!stateDetail) {
       return res.status(404).json({
         message: MessageResponse.Error,
-        description: "Invalid State ID!",
-        data: stateDetail,
+        description: "The state with the provided ID does not exist",
+        data: null,
       });
     }
 
     return res.status(200).json({
       message: MessageResponse.Success,
-      description: "States fecthed successfully!",
+      description: "States fetched successfully!",
       data: stateDetail,
     });
   }
