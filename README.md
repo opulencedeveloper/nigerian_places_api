@@ -69,7 +69,7 @@ The base URL for the API is:
 ```json
 {
   "message": "success",
-  "description": "States fetched successfully!",
+  "description": "State details fetched successfully!",
   "data": {
     "id": "lagos",
     "lgas": [
