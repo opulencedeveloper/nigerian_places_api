@@ -18,7 +18,7 @@ class StateController {
             const states = yield service_1.stateService.fetchStates();
             return res.status(200).json({
                 message: enum_1.MessageResponse.Success,
-                description: "States fecthed successfully!",
+                description: "States fetched successfully!",
                 data: states,
             });
         });

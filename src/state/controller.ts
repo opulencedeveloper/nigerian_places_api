@@ -10,7 +10,7 @@ class StateController {
 
     return res.status(200).json({
       message: MessageResponse.Success,
-      description: "States fecthed successfully!",
+      description: "States fetched successfully!",
       data: states,
     });
   }
