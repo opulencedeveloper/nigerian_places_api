@@ -25,28 +25,29 @@ The base URL for the API is:
 
 **Example Response:**
 
-````json
+```json
 {
-    "message": "success",
-    "description": "States fetched successfully!",
-    "data": [
-  {
-    "id": "abj",
-    "name": "Abuja",
-    "region": "Central",
-    "capital": "Abuja",
-    "slogan": "The Center of Unity"
-  },
-  {
-    "id": "lag",
-    "name": "Lagos",
-    "region": "South-West",
-    "capital": "Lagos",
-    "slogan": "Centre of Excellence"
-  }
-  // More states...
-] }
-````
+  "message": "success",
+  "description": "States fetched successfully!",
+  "data": [
+    {
+      "id": "abj",
+      "name": "Abuja",
+      "region": "Central",
+      "capital": "Abuja",
+      "slogan": "The Center of Unity"
+    },
+    {
+      "id": "lag",
+      "name": "Lagos",
+      "region": "South-West",
+      "capital": "Lagos",
+      "slogan": "Centre of Excellence"
+    }
+    // More states...
+  ]
+}
+```
 
 ### 2. Get State Details
 
@@ -67,17 +68,18 @@ The base URL for the API is:
 
 ```json
 {
-    "message": "success",
-    "description": "States fecthed successfully!",
-    "data": {
-        "id": "lagos",
-        "name": "Lagos",
-        "region": "South West",
-        "capital": "Ikeja",
-        "slogan": "Centre Of Excellence"
-    }
+  "message": "success",
+  "description": "States fecthed successfully!",
+  "data": {
+    "id": "lagos",
+    "name": "Lagos",
+    "region": "South West",
+    "capital": "Ikeja",
+    "slogan": "Centre Of Excellence"
+  }
 }
 ```
+
 **Error Responses:**
 
 - **Status Code:** `404 Not Found`
@@ -91,47 +93,12 @@ The base URL for the API is:
   "description": "The state with the provided ID does not exist.",
   "data": null
 }
-
 ```
 
-## Setup and Usage
-
-To set up and use this API:
-
-1. **Clone the Repository:**
-
-    ```bash
-    git clone https://github.com/yourusername/nigerian-places-api.git
-    ```
-
-2. **Navigate to the Project Directory:**
-
-    ```bash
-    cd nigerian-places
-    ```
-
-3. **Install Dependencies:**
-
-    ```bash
-    npm install
-    ```
-
-4. **Start Development Server:**
-
-    ```bash
-    npm run dev
-    ```
-
-5. **Test the Endpoints:**
-
-   Use a tool like Postman to make requests to test the API endpoints.
-
-
-   ## Contributing
+## Contributing
 
 Feel free to submit pull requests or open issues for any improvements or bug fixes.
 
 ## Contact
 
 For any questions or feedback, please contact [victorkudos@gmail.com](mailto:victorkudos@gmail.com).
-
