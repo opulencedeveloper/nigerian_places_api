@@ -1,5 +1,6 @@
 import { IStateData } from "./interface";
 import State from "./entity";
+import StateDetail from "../state_detail/entity";
 
 class StateService {
   public async fetchStates() {
@@ -9,7 +10,7 @@ class StateService {
   }
 
   public async fetchStateDetail(id: string) {
-    const stateDetail = await State.findOne({id});
+    const stateDetail = await StateDetail.findOne({id});
 
     return stateDetail;
   }

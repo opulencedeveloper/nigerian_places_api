@@ -14,6 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.stateService = void 0;
 const entity_1 = __importDefault(require("./entity"));
+const entity_2 = __importDefault(require("../state_detail/entity"));
 class StateService {
     fetchStates() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -23,7 +24,7 @@ class StateService {
     }
     fetchStateDetail(id) {
         return __awaiter(this, void 0, void 0, function* () {
-            const stateDetail = yield entity_1.default.findOne({ id });
+            const stateDetail = yield entity_2.default.findOne({ id });
             return stateDetail;
         });
     }
