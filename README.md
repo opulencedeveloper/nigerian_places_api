@@ -6,7 +6,7 @@ The Nigerian Places API provides information about Nigerian states and their det
 
 ## Base URL
 
-The base URL for the API is: 
+The base URL for the API is:
 
 [https://api-nigerianplaces.onrender.com/api/v1](https://api-nigerianplaces.onrender.com/api/v1)
 
@@ -25,7 +25,7 @@ The base URL for the API is:
 
 **Example Response:**
 
-```json
+````json
 {
     "message": "success",
     "description": "States fetched successfully!",
@@ -91,6 +91,7 @@ The base URL for the API is:
   "data": null
 }
 
+```
 
 ## Setup and Usage
 
@@ -133,3 +134,4 @@ Feel free to submit pull requests or open issues for any improvements or bug fix
 
 For any questions or feedback, please contact [victorkudos@gmail.com](mailto:victorkudos@gmail.com).
 
+````
