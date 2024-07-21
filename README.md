@@ -46,7 +46,8 @@ The base URL for the API is:
   }
   // More states...
 ] }
-``
+````
+
 ### 2. Get State Details
 
 - **Endpoint:** `/states/{id}`
@@ -76,7 +77,7 @@ The base URL for the API is:
         "slogan": "Centre Of Excellence"
     }
 }
-
+```
 **Error Responses:**
 
 - **Status Code:** `404 Not Found`
