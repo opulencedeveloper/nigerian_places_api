@@ -30,13 +30,13 @@ class StateController {
             if (!stateDetail) {
                 return res.status(404).json({
                     message: enum_1.MessageResponse.Error,
-                    description: "The state with the provided ID does not exist",
+                    description: "The state with the provided ID does not exist!",
                     data: null,
                 });
             }
             return res.status(200).json({
                 message: enum_1.MessageResponse.Success,
-                description: "States fetched successfully!",
+                description: "State details fetched successfully!",
                 data: stateDetail,
             });
         });
