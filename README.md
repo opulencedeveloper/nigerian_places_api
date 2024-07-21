@@ -72,10 +72,39 @@ The base URL for the API is:
   "description": "States fecthed successfully!",
   "data": {
     "id": "lagos",
-    "name": "Lagos",
-    "region": "South West",
-    "capital": "Ikeja",
-    "slogan": "Centre Of Excellence"
+    "lgas": [
+      "Agege",
+      "Ajeromi-Ifelodun",
+      "Alimosho",
+      "Amuwo-Odofin",
+      "Apapa",
+      "Badagary",
+      "Epe",
+      "Eti-Osa",
+      "Ibeju-Lekki",
+      "Ifako-Ijaye",
+      "Ikeja",
+      "Ikorodu",
+      "Kosofe",
+      "Lagos Island",
+      "Lagos Mainland",
+      "Mushin",
+      "Ojo",
+      "Oshodi-Isolo",
+      "Somolu",
+      "Surulere"
+    ],
+    "neighbours": ["Ogun"],
+    "towns": [
+      "Agege",
+      "Badagry",
+      "Epe",
+      "Ikorodu",
+      "Ikoyi",
+      "Mushin",
+      "Surulere",
+      "Victoria Island"
+    ]
   }
 }
 ```
