@@ -4,7 +4,8 @@ import StateDetail from "../state_detail/entity";
 
 class StateService {
   public async fetchStates() {
-    const states = await State.find();
+    // find_states_and_sort_them_alphabetically_by_name_in_ascending_order
+    const states = await State.find().sort({ name: 1 });;
 
     return states;
   }

@@ -31,14 +31,14 @@ The base URL for the API is:
   "description": "States fetched successfully!",
   "data": [
     {
-      "id": "abj",
+      "id": "abuja",
       "name": "Abuja",
       "region": "Central",
       "capital": "Abuja",
       "slogan": "The Center of Unity"
     },
     {
-      "id": "lag",
+      "id": "lagos",
       "name": "Lagos",
       "region": "South-West",
       "capital": "Lagos",

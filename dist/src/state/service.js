@@ -18,7 +18,9 @@ const entity_2 = __importDefault(require("../state_detail/entity"));
 class StateService {
     fetchStates() {
         return __awaiter(this, void 0, void 0, function* () {
-            const states = yield entity_1.default.find();
+            // find_states_and_sort_them_alphabetically_by_name_in_ascending_order
+            const states = yield entity_1.default.find().sort({ name: 1 });
+            ;
             return states;
         });
     }
