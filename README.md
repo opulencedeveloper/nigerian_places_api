@@ -135,4 +135,3 @@ Feel free to submit pull requests or open issues for any improvements or bug fix
 
 For any questions or feedback, please contact [victorkudos@gmail.com](mailto:victorkudos@gmail.com).
 
-````
