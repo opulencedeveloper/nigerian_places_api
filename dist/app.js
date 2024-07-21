@@ -17,7 +17,7 @@ const StartServer = () => {
     app.use((req, res, next) => {
         loggin_1.default.info(`Incoming ==> Method : [${req.method}] - IP: [${req.socket.remoteAddress}]`);
         res.on("finish", () => {
-            // Log the Response
+            // Log_the_Response
             loggin_1.default.info(`Incomming ==> Method : [${req.method}] - Url: [${req.url}] - IP: [${req.socket.remoteAddress}] - status: [${res.statusCode}]`);
         });
         next();
@@ -31,17 +31,17 @@ const StartServer = () => {
     }));
     // Routes
     app.use("/api/v1", router_1.StateRouter);
-    // Health check
+    // Health_check
     app.get("/api/v1/healthcheck", (_req, res) => {
         res.status(200).json({ status: "UP 🔥🔧🎂" });
     });
-    // Invalid url error handling
+    // Invalid_url_error_handling
     app.use((_req, res) => {
         const _error = new Error("Url not found 😟");
         loggin_1.default.error(_error);
         return res.status(404).json({ message: _error.message });
     });
-    //error middleware
+    //error _middleware
     app.use((err, _req, res, _next) => {
         if (err) {
             console.error(err);
@@ -55,10 +55,12 @@ const StartServer = () => {
     const server = app.listen(port, () => loggin_1.default.info(`Server is running on port ${port} 🔥🔧`));
 };
 const MONGODB_URI = process.env.MONGODB_URI || "";
+//Connect_to_DB
 mongoose_1.default
     .connect(MONGODB_URI)
     .then(() => {
     loggin_1.default.info(`Database connected 🎂`);
+    //Start_Server
     StartServer();
 })
     .catch((_error) => {

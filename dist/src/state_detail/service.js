@@ -12,38 +12,24 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.stateService = void 0;
+exports.stateDetailService = void 0;
 const entity_1 = __importDefault(require("./entity"));
-class StateService {
-    fetchStates() {
-        return __awaiter(this, void 0, void 0, function* () {
-            const states = yield entity_1.default.find();
-            return states;
-        });
-    }
-    fetchStateDetail(id) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const stateDetail = yield entity_1.default.findOne({ id });
-            return stateDetail;
-        });
-    }
-    uploadStateData(stateDetails) {
+class StateDetailService {
+    uploadStateDetailData(stateDetails) {
         return __awaiter(this, void 0, void 0, function* () {
             const id = stateDetails.id;
-            const name = stateDetails.name;
-            const region = stateDetails.region;
-            const capital = stateDetails.capital;
-            const slogan = stateDetails.slogan;
+            const lgas = stateDetails.lgas;
+            const neighbours = stateDetails.neighbours;
+            const towns = stateDetails.towns;
             const state = new entity_1.default({
                 id,
-                name,
-                region,
-                capital,
-                slogan,
+                lgas,
+                neighbours,
+                towns,
             });
             yield state.save();
             return state;
         });
     }
 }
-exports.stateService = new StateService();
+exports.stateDetailService = new StateDetailService();
