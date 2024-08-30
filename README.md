@@ -8,7 +8,7 @@ The Nigerian Places API provides information about Nigerian states and their det
 
 The base URL for the API is:
 
-[https://api-nigerianplaces.onrender.com/api/v1](https://api-nigerianplaces.onrender.com/api/v1)
+[https://nigerianplacesapi-production.up.railway.app/api/v1](https://nigerianplacesapi-production.up.railway.app/api/v1)
 
 ## Endpoints
 
